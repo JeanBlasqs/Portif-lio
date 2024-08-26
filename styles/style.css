@@ -497,9 +497,14 @@
         display: none;
     }
 
-    .hero-imageresponsivo{
+    .hero-imageresponsivo {
         width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou `contain`, dependendo do efeito desejado */
+        margin-right: 0;
+
     }
+    
     
     .text-content h1 {
         font-size: 40px;
@@ -531,12 +536,15 @@
 
     .text-content h1 {
 
-        margin-top: -100px;
+        margin-top: 70px;
+        font-size: 4em;
     }
 
     .p1{
 
-        margin-left:-20px;
+        margin-left:-25px;
+        text-align: justify;
+        max-width: 390px;
 
     }
 
@@ -551,7 +559,7 @@
     .p3{
 
         margin-left:-10px;
-        margin-top:300px;
+        margin-top:350px;
         text-align: justify;
         max-width: 400px;
 
