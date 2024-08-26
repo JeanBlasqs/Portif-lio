@@ -92,18 +92,16 @@
         left: 0;
         z-index: 1;
         transform: translateY(0); /* Inicialmente sem deslocamento */
+        display: block;
     }
     
-    .hero-image2 {
-        height: 100%;
-        object-fit: cover; /* Cobre toda a área da div sem distorção */
-        position: absolute; /* Faz a imagem se mover dentro da div */
-        top: 0;
-        left: 0;
-        z-index: 1;
-        transform: translateY(0); /* Inicialmente sem deslocamento */
+    .hero-imageresponsivo{
+
+        width: 100%;
+        display: none;
+
     }
-    
+
 
 
     .hero-text {
@@ -433,3 +431,146 @@
     }
 
     
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        display: none;
+    }
+
+
+
+    .hero-text {
+        top: 10%;
+        right: 5%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .impact-phrase-container {
+        bottom: 10px;
+        right: 5%;
+        font-size: 1.5em;
+    }
+
+    .hero-imageresponsivo {
+        display: block;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .text-content h1 {
+        font-size: 60px;
+        margin-top:100px;
+    }
+
+    .text-content p {
+        font-size: 1em;
+    }
+
+    .p1, .p2, .p3 {
+        font-size: 1.2em;
+        margin-left: 0;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media screen and (max-width: 480px) {
+
+    .cabecalho {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        display: none;
+    }
+
+    .hero-imageresponsivo{
+        width: 100%;
+    }
+    
+    .text-content h1 {
+        font-size: 40px;
+    }
+
+    .text-content p {
+        font-size: 0.9em;
+    }
+
+    .hero-text {
+        font-size: 1.5em;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5em;
+        margin-top:300px;
+        margin-right:-10px
+
+    }
+
+    .hero-text p {
+        font-size: 0.6em;
+    }
+
+    .impact-phrase-container {
+        font-size: 0.35em;
+        margin-right: 55px;
+    }
+
+    .text-content h1 {
+
+        margin-top: -100px;
+    }
+
+    .p1{
+
+        margin-left:-20px;
+
+    }
+
+    .p2{
+
+        margin-left:190px;
+        margin-top:200px;
+        text-align: justify;
+
+    }
+
+    .p3{
+
+        margin-left:-10px;
+        margin-top:300px;
+        text-align: justify;
+        max-width: 400px;
+
+
+
+    }
+
+    .social-icon {
+        display: inline-block;
+        width: 40px;
+        height: 60px;
+        transition: transform 0.3s ease;
+    }
+
+}
+
+
+    
+
+
+
+
