@@ -237,7 +237,7 @@
     .p2 {
         position: absolute;
         margin-top: 135px; /* Centraliza verticalmente */
-        margin-left: 1050px;
+        margin-left: 1150px;
         transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
         width:100%; /* Ajusta a largura para que o texto não vá até as bordas */
         text-align: center; /* Centraliza o texto */
