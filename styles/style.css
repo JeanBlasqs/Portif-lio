@@ -603,8 +603,14 @@
     .trabalhos-container {
 
         height: 1350px;
+
     }
 
+    #trabalhos{
+
+        border-bottom-right-radius: 15%;
+        border-bottom-left-radius: 15%;
+    }
 
 }
 
